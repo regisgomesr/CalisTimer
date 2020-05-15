@@ -2,12 +2,12 @@ import React from 'react'
 import { View, Text, TouchableHighlight } from 'react-native'
 
 
-const HomeScreen = props => {
+const HomeScreen = ({navigation}) => {
     return (
         <View style={{ backgroundColor: '#D6304A' }}>
-            <TouchableHighlight onPress={() => props.navigation.navigate('EMOM') }>
+            <TouchableHighlight onPress={() => navigation.navigate('EMOM') }>
                 <Text>Home Screen</Text>
-            </TouchableHighlight>    
+            </TouchableHighlight>
             
         </View>
     )
@@ -17,4 +17,4 @@ HomeScreen.navigationOptions = {
     header: null
 }
 
-export default HomeScreen
+export default HomeScreen;

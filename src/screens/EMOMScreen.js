@@ -2,11 +2,11 @@ import React from 'react'
 import { View, Text } from 'react-native'
 
 
-const EMOMScreen = props => {
+const EMOMScreen = ({navigation}) => {
     return (
         <View>
             <Text>EMOM Screen</Text>
         </View>
     )
 }
-export default EMOMScreen
+export default EMOMScreen;
